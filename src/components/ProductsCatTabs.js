@@ -3,7 +3,7 @@ import Tabs from 'react-bootstrap/Tabs';
 import { arrived } from '../data/Arrived';
 import ProductCard from './ProductCard';
 
-function ProductsCatTabs({categories}) {
+function ProductsCatTabs() {
   return (
     <Tabs
       defaultActiveKey="All"
