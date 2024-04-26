@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dvicta/static/css/main.a3b88134.css",
-    "main.js": "/dvicta/static/js/main.0d1fde62.js",
+    "main.css": "/dvicta/static/css/main.6b7ff875.css",
+    "main.js": "/dvicta/static/js/main.fbcbee76.js",
     "static/media/—Pngtree—cricket logo vector and clipart_9163535.png": "/dvicta/static/media/—Pngtree—cricket logo vector and clipart_9163535.571bb04a874f63679734.png",
     "static/media/Gray_Nicolls_Elite_GN6_Camo_Cricket_Batting_Gloves_Mens_Size-Right_Handed_Composite_View.jpg__73786.jpg": "/dvicta/static/media/Gray_Nicolls_Elite_GN6_Camo_Cricket_Batting_Gloves_Mens_Size-Right_Handed_Composite_View.jpg__73786.9fd4af2d99e3562bbe2d.jpg",
     "static/media/MRF_English_Willow_Complete_Cricket_Kit_Size_SH_Cricketershop.com_7__54651.jpg": "/dvicta/static/media/MRF_English_Willow_Complete_Cricket_Kit_Size_SH_Cricketershop.com_7__54651.cb5c71e7c566089fba47.jpg",
@@ -11,11 +11,11 @@
     "static/media/Gortonshire_Lambada_Pro_English_Willow_Cricket_Bat_Size_SH_Front_View__34844.jpg": "/dvicta/static/media/Gortonshire_Lambada_Pro_English_Willow_Cricket_Bat_Size_SH_Front_View__34844.1bfc31f160d68954dab3.jpg",
     "static/media/hero1.jpg": "/dvicta/static/media/hero1.ca2e7bb355df6174bbb2.jpg",
     "index.html": "/dvicta/index.html",
-    "main.a3b88134.css.map": "/dvicta/static/css/main.a3b88134.css.map",
-    "main.0d1fde62.js.map": "/dvicta/static/js/main.0d1fde62.js.map"
+    "main.6b7ff875.css.map": "/dvicta/static/css/main.6b7ff875.css.map",
+    "main.fbcbee76.js.map": "/dvicta/static/js/main.fbcbee76.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3b88134.css",
-    "static/js/main.0d1fde62.js"
+    "static/css/main.6b7ff875.css",
+    "static/js/main.fbcbee76.js"
   ]
 }
