@@ -1,0 +1,26 @@
+export const category = [
+    {
+        id:1,
+        name:"Bat",
+    },
+    {
+        id:2,
+        name:"Pad",
+    },
+    {
+        id:3,
+        name:"Gloves",
+    },
+    {
+        id:4,
+        name:"Balls",
+    },
+    {
+        id:5,
+        name:"Helmet",
+    },
+    {
+        id:6,
+        name:"Kitbags",
+    },
+]

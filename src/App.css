@@ -1,38 +1,613 @@
-.App {
-  text-align: center;
+/*logo css*/
+.logo .storeName{
+color:var(--secondary-color);
+font-size: 1.5rem;
+font-weight: 800;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo .storeName span{
+    font-size: 1.8rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo .storeDesc{
+    color:var(--gray-color);
+    font-size: 0.8rem;
+}
+/*header css*/
+.header{
+   
+    border-bottom: 0.2px solid gainsboro;
+    background: #eefcfa;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header .support{
+    width:auto;
+    padding:5px 20px;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+/*hero css*/
+.heroSec {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: #eefcfa;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heroSec .hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
+@media screen and (max-width:425px){
+    .heroSec .hero {
+       flex-direction: column-reverse;
+        
+     }
+ }
+
+.heroSec .hero .content{
+   flex:2;
+}
+.heroSec .hero .content h1{
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.5;
+    letter-spacing: 2px;
+ }
+
+
+ .heroSec .hero .content p{
+    font-size: 1.6rem;
+    
+    line-height: 1;
+    
+ }
+
+ @media screen and (max-width:768px){
+    .heroSec .hero .content p{
+        font-size: 1.2rem;
+        
+        line-height: 1;
+        
+     }
+ }
+
+ @media screen and (max-width:425px){
+    .heroSec .hero .content h1,
+    .heroSec .hero .content p
+    {
+       text-align: center;
+        
+     }
+ }
+
+.heroSec .hero .image{
+    flex:1;
+}
+
+.heroSec .hero .image img{
+    width:400px;
+    height: 400px;
+}
+@media screen and (max-width:425px){
+    .heroSec .hero .image img{
+        width:90%;
+        height: 300px;
+    }
+ }
+.brand{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width:90%;
+    height:auto;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px 0 ; 
+    margin: 0 auto;
+}
+
+.brand .brandImg{
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.brand .brandImg img{
+    width: 100px;
+    
+}
+
+@media screen and (max-width:768px){
+    .brand{
+        display: none;
+    }
+ }
+/*category css*/
+.category .top{
+margin-top: 70px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.category .top .view a{
+    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category .top .view a:hover{
+background-color: var(--secondary-color);
+color: #fff !important;
+
+border-radius: 10px;
+}
+
+.category .bottom{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+@media screen and (max-width:425px){
+    .category .bottom{
+       justify-content: center;
+    }
+}
+
+.category .bottom .cat{
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.category .bottom .cat p{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+@media screen and (max-width:768px){
+    .category .bottom .cat{
+        width: 90px;
+    height: 90px;
+    } 
+}
+.category .bottom .cat:hover{
+    box-shadow: 0 2px 10px 0 ; 
+}
+
+/*combo offer*/
+
+.combo{
+    
+}
+.comboOffer .top{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .comboOffer .top .view a{
+        padding: 5px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .comboOffer .top .view a:hover{
+    background-color: var(--secondary-color);
+    color: #fff !important;
+    
+    border-radius: 10px;
+    }
+    .comboOffer .top .heading{
+        
+        padding-top:10px;
+    }
+   
+    
+    .comboOffer .bottom{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    @media screen and (max-width:425px){
+        .comboOffer .bottom{
+           justify-content: center;
+        }
+    }
+    
+    .comboOffer .bottom .cat{
+       
+    }
+    
+    .comboOffer .bottom .cat:hover{
+       
+    }
+
+
+    .comboCard{
+        width: 550px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 1px 5px 0 ;
+       
+    }
+
+    @media screen and (max-width:1024px) {
+        .comboCard{
+            width: 350px;
+            height: 200px;
+           
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        .comboCard{
+            width: 100%;
+            height: 300px;
+           
+        }
+    }
+    @media screen and (max-width:425px) {
+        .comboCard{
+            width: 100%;
+            height: 250px;
+           
+        }
+    }
+
+    .comboCard .image img{
+       
+       width: 200px;
+       height: 200px;
+    }
+
+    @media screen and (max-width:768px) {
+        .comboCard .image img{
+       
+            width: 400px;
+            height: 300px;
+         }
+    }
+    @media screen and (max-width:425px) {
+        .comboCard .image img{
+       
+            width: 200px;
+            height: 250px;
+         }
+    }
+
+    @media screen and (max-width:375px) {
+        .comboCard .image img{
+       
+            width: 170px;
+            height: 250px;
+         }
+    }
+    @media screen and (max-width:320px) {
+        .comboCard .image img{
+       
+            width: 100px;
+            height: 250px;
+         }
+    }
+    .comboCard .text{
+        padding: 20px 10px;
+    }
+
+    .comboCard .text h3{
+        font-size: 1.4rem;
+        padding-bottom: 10px;
+        color: var(--primary-color);
+    }
+
+    .comboCard .text p{
+        font-size: 0.9rem;
+        padding-bottom: 10px;
+        color: var(--gray-color);
+    }
+
+    .comboCard .text a{
+        width: 70px;
+        height: 30px;
+        padding: 5px 15px;
+    }
+
+    .comboCard .text a:hover{
+       
+        background-color: var(--secondary-color);
+    }
+
+
+    /*new Arrived*/
+    .newArrived .top{
+        margin-top: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+    
+        .newArrived .top .view a{
+            padding: 5px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .newArrived .top .view a:hover{
+        background-color: var(--secondary-color);
+        color: #fff !important;
+        
+        border-radius: 10px;
+        }
+        .newArrived .top .heading{
+            
+            padding-top:10px;
+        }
+       
+        
+        .newArrived .bottom{
+            position: relative;
+            margin-top: 50px;
+           overflow-x: hidden;
+        }
+
+        .newArrived .bottom .inner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            width: 100%;
+            height: auto;
+            padding: 20px;
+            gap: 20px;
+            
+            transition: transform 0.5s ease;
+        }
+        
+         .newCard{
+            width:300px;
+            height: auto;
+            box-shadow: 0 1px 5px 0 ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+         .newCard .image img{
+            width:260px;
+            height:160px ;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+         .newCard .content h5{
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: bold;
+            padding-bottom: 10px;
+        }
+
+         .newCard .content p{
+            text-align: center;
+            font-size: 1rem;
+            
+            padding-bottom: 10px;
+        }
+
+       .newArrived .bottom .arrowBtn{
+        position: absolute;
+        top:15px;
+        right:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+       }
+
+       .newArrived .bottom .arrowBtn .prev,
+       .newArrived .bottom .arrowBtn .next
+       {
+        cursor: pointer;
+        color: var(--secondary-color);
+        background-color: var(--light-backcolor);
+        padding: 5px;
+       }
+        
+       .newArrived .bottom .arrowBtn .prev button,
+       .newArrived .bottom .arrowBtn .next button{
+        border: none;
+        outline: none;
+       }
+    
+    
+/*Products css*/
+.products .top{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    }
+
+    .products.top .view a{
+        padding: 5px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .products .top .view a:hover{
+    background-color: var(--secondary-color);
+    color: #fff !important;
+    
+    border-radius: 10px;
+    }
+    
+    .products .bottom{
+        margin-top: 50px;
+       ;
+    }
+    
+    @media screen and (max-width:425px){
+        .products .bottom{
+           
+        }
+    }
+    
+    
+
+    /*discount css*/
+    .discount{
+        margin: 50px auto;
+        width:90%;
+        height: 200px;
+        border-radius: 10px;
+        background-color: #eefcfa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (max-width:425px) {
+        .discount{
+            flex-direction: column-reverse;
+            height: auto;
+            padding-bottom: 20px;
+        }
+    }
+
+.discount .content{
+    flex: 2;
+}
+    .discount .content p{
+   font-size: 2rem;
+   color: var(--primary-color);
+   font-weight: bold;
+   padding-bottom: 20px;
+   
+    }
+
+    @media screen and (max-width:768px) {
+        .discount .content p{
+            font-size: 1.5rem;
+        }
+    }
+
+    .discount .content a{
+       display: inline-block;
+        padding: 5px 30px;
+        text-decoration: none;
+        font-size: 1.2rem;
+       margin-right: 20px;
+        background-color: var(--primary-color);
+        color: #fff;
+    }
+
+    @media screen and (max-width:768px) {
+        .discount .content a{
+            padding: 2px 10px;
+        }
+    }
+
+    .discount .image img{
+        width: 250px;
+        height: 200px;
+    }
+
+    /*banner 2*/
+    .banner2 .b{
+       
+        padding:10px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .banner2 p{
+        text-align: center;
+    }
+
+    @media screen and (max-width:425px) {
+        .banner2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    /*footer*/
+    .footer p{
+        
+        text-align: center;
+    }
+
+    .footer .foot{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @media screen and (max-width:425px) {
+        .footer .foot{
+            
+            justify-content: center;
+            align-items: center;
+        } 
+    }
+
+    .footer .foot .left{
+        display: flex;
+      flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+    }
+
+    .footer .foot .left .socialIcons a{
+        display: inline-block;
+        text-decoration: none;
+        color: inherit;
+       margin-right: 10px;
+
+    }
+
+    .footer .foot .middle a{
+        text-decoration: none;
+        color: inherit;
+        display:block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+
+
+
