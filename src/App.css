@@ -538,6 +538,7 @@ border-radius: 10px;
     }
 
     /*banner 2*/
+   
     .banner2 .b{
        
         padding:10px 20px;
@@ -575,9 +576,10 @@ border-radius: 10px;
 
     @media screen and (max-width:425px) {
         .footer .foot{
-            
+            flex-direction: column;
             justify-content: center;
             align-items: center;
+            gap: 30px;
         } 
     }
 

@@ -7,7 +7,7 @@ import pay from '../assests/securePayment.png';
 
 const Banner2 = () => {
   return (
-    <section className='banner2' style={{width:"100%",height:"150px",display:"flex",justifyContent:"space-between",alignItems:"center"}}>
+    <section className='banner2' style={{width:"100%",display:"flex",justifyContent:"space-between",alignItems:"center"}}>
       <div className='b'>
         <img src={freeDelivery} alt=''/> 
         <p>free Delivery</p>
